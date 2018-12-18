@@ -74,7 +74,7 @@ public class AdminDAOImpl extends AbstractDAOImpl implements IAdminDAO{
             Admin vo = new Admin();
             vo.setAid(rs.getString(1));
             vo.setPassword(rs.getString(2));
-            vo.setLastdate(rs.getDate(3));
+            vo.setLastdate(rs.getDate(3));//这里是Date类型，上面是TimeDate类型，请问你怎么处理的？
             vo.setFlag(rs.getInt(4));
             vo.setStatus(rs.getInt(5));
             all.add(vo);
